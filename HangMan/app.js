@@ -56,10 +56,12 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
             $scope.notifications.push({msg: 'Congratulations, you won!', type: 'success'});
             return;
           }
+
           if ($scope.words.indexOf(response.data[0][0]) != -1) {
             $scope.reset();
             return;
           }
+          
           $scope.theWord = response.data[0][0];
           $scope.divList = new Array($scope.theWord.length);
           for (var i = 0; i < $scope.theWord.length; i++) {
@@ -92,6 +94,7 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
         $scope.guessedList.push(angular.copy($scope.guessed.letters[id])); //add to global list of guessed letters
         $log.info("guessing letter # " + id + " of word " + $scope.theWord);
         var shouldBeCleared = false;
+
         angular.forEach($scope.letters, function(obj) {
           $log.info("Checking if " + $scope.guessed.letters[id] + " is equal to " + obj.name);
           if (obj.name.localeCompare($scope.guessed.letters[id]) === 0) {
@@ -118,9 +121,11 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
             }
           }
         });
+
         if (shouldBeCleared) {
           $scope.guessed.letters[id] = ''; //clear guessed only if incorrect; else leave it
         }
+
         $scope.totalGuesses+=1;
         if ($scope.incorrectGuesses === 7) {
           $scope.totalRounds+=1;
@@ -173,6 +178,9 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
         };        
     }])
 
+    /*
+      Controller module for the homepage/main menu. Handles functionality of the menu system. 
+    */
     .controller('HomeController', ['$scope', function HomeController($scope) {
       $scope.pageClass='page-home';
       
