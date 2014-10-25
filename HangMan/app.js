@@ -16,11 +16,12 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
       ;
     })
 
-    .controller('HighScoreController', ['$scope', '$http', '$log', function HighScoreController($scope, $http, $log) {
+    .controller('HighScoreController', ['$scope', '$http', '$log', 'HighScoreService', function HighScoreController($scope, $http, $log, HighScoreService) {
       $scope.pageClass='page-highscore';
       $scope.notifications = [];
-      $scope.scores = []; 
+      $scope.scores = [];   
 
+      /*
       $scope.getHighScores = function() {
         var jsonPayload = {action: 'getScores'};
         $http.post('HighScore.php', jsonPayload, {'Content-Type': 'application/x-www-form-urlencoded'}).then(function(response) {
@@ -32,9 +33,21 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
           });
         });        
       };
+      */
+      $scope.getHighScores = function() {
+        var jsonPayload = {action: 'getScores'};
+        HighScoreService.getHighScores(jsonPayload).then(function(scores) {
+          $scope.scores = scores;
+        });
+        $scope.notifications.push({msg: 'New High Scores!', type: 'success'});
+      };
+
+      $scope.getHighScores();
+
+
 
       /* fetch high score data from backend */
-      $scope.getHighScores();      
+      //$scope.getHighScores();      
 
       $scope.closeNotification = function(index) {
           $scope.notifications.splice(index, 1);
