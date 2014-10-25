@@ -1,11 +1,24 @@
 <!-- page-highscore.html -->
 
 <center>
+	<h1>HIGH SCORES</h1>
+	<h2>data</h2>
+	
+	<br>
+		<div alert ng-repeat="notification in notifications" type="{{notification.type}}" close="closeNotification($index)">{{notification.msg}}</div>
+	<br>
 
-	
-		<h1>HIGH SCORES</h1>
-		<h2>data</h2>
-	
+	<table class="table table-hover" id = "theTable" border = "1">
+			    <tr id="row0" align = 'center'>
+				    <td><span ng-style="myStyle0"><h3><b>Date</b></h3></span></td>
+				    <td><span ng-style="myStyle0"><h3><b>Score</b></h3></span></td>
+				</tr>
+
+				<tr ng-repeat="score in scores" align = 'center'>
+					<td>{{score.scoreDate}}</td>
+				    <td>{{score.score}}</td>			   
+			    </tr>
+	</table>
 
 	<a href="#" class="btn btn-primary btn-lg">Home</a>
 	<a href="#hangman" class="btn btn-primary btn-lg">JHangMan</a>

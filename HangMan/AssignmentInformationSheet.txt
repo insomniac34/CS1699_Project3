@@ -9,7 +9,7 @@ Source Code File Names:
 testwords.txt -> ORIGINALLY called "words.txt", this is the same as Dr. Ramirez's words.txt
 init.php -> initialization script for the database
 Hangman.php -> gets the random word from the database and sends it via JSON to the client
-SupportPortalLogger.php -> my logger object for debugging
+Logger.php -> my logger object for debugging
 app.js -> all of my javascript, 90% of it is AngularJS
 index.html -> main html page 
 modalContent.html -> an HTML template for the popup window

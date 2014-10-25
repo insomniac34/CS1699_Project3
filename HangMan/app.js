@@ -16,11 +16,25 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
       ;
     })
 
-    .controller('HighScoreController', ['$scope', function HighScoreController($scope) {
+    .controller('HighScoreController', ['$scope', '$http', '$log', function HighScoreController($scope, $http, $log) {
       $scope.pageClass='page-highscore';
+      $scope.notifications = [];
+      $scope.scores = []; 
 
-      
-      
+      var jsonPayload = {action: 'getScores'};
+      $http.post('HighScore.php', jsonPayload, {'Content-Type': 'application/x-www-form-urlencoded'}).then(function(response) {
+        $log.info("JSON Result from HighScore.php: " + JSON.stringify(response.data));
+        $scope.notifications.push({msg: 'New High Scores!', type: 'success'});
+        
+        angular.forEach(response.data, function(dataRow) {
+          $scope.scores.push(dataRow);
+        });
+      });
+
+      $scope.closeNotification = function(index) {
+          $scope.notifications.splice(index, 1);
+      };        
+
     }])
 
     .controller('HangmanController', ['$scope', '$http', '$log', '$modal', '$rootScope', function HangmanController($scope, $http, $log, $modal, $rootScope) {
@@ -149,8 +163,8 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
           $scope.notifications.push({msg: 'Congratulations, you guessed the word! Winning Percentage: ' + winningPercentage + '\nTotal Rounds Played: ' + $scope.totalRounds + '\nTotal Rounds Won: ' + $scope.roundsWon, type: 'success'});
           
           /* update backend w/ latest high scores */
-          var jsonPayload = {score: $scope.globalScore, date: new Date().toString()};
-          $http.post('HighScore.php', jsonPayload, {action: 'updateScores'}, {'Content-Type': 'application/x-www-form-urlencoded'}).then(function(response) {
+          var jsonPayload = {score: $scope.globalScore, date: new Date().toString(), action: 'updateScores'};
+          $http.post('HighScore.php', jsonPayload, {'Content-Type': 'application/x-www-form-urlencoded'}).then(function(response) {
             
             $log.info("JSON Result from HighScore.php: " + JSON.stringify(response));
 

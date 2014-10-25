@@ -1,7 +1,7 @@
 <?php
-	require_once 'SupportPortalLogger.php';
+	require_once 'Logger.php';
 	$filename = preg_replace('/\.php$/', '', __FILE__);
-	$log = new SupportPortalLogger($filename); 
+	$log = new Logger($filename); 
 
 	$con = new mysqli("localhost", "root", "password", "test1");
 	if ($con->connect_errno) {
