@@ -1,3 +1,31 @@
 [ INFO /var/www/php/v3/Hangman] [ 2014-10-23 17:06 ] Word is: sword
 [ INFO /var/www/php/v3/Hangman] [ 2014-10-23 17:22 ] Word is: despair
 [ INFO /var/www/php/v3/Hangman] [ 2014-10-23 19:27 ] Word is: sword
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-23 22:29 ] Word is: gently
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-23 22:30 ] Word is: skill
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-23 22:33 ] Word is: boo
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-23 22:33 ] Word is: skill
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-23 22:34 ] Word is: lightning
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-23 22:35 ] Word is: noble
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-23 22:35 ] Received data: score: 0, date: Thu Oct 23 2014 22:35:02 GMT-0400 (EDT)
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-23 22:35 ] Score has been updated.
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-23 23:01 ] Word is: hippopotamic
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-23 23:02 ] Word is: machine
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 16:09 ] Word is: pain
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 16:12 ] Word is: insanity
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 16:13 ] Word is: lightning
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 16:15 ] Word is: sportsmanlike
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 16:17 ] Word is: machine
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 16:17 ] Received data: score: 0, date: Sat Oct 25 2014 16:17:33 GMT-0400 (EDT)
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 16:17 ] Word is: ultimate
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 16:17 ] Score has been updated via the following query: INSERT INTO Scores (id, scoreDate, score) VALUES (NULL, NOW(), 0)
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 16:17 ] 0 was NOT a high score!
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 16:18 ] Word is: wedding
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 16:18 ] Word is: machine
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 16:18 ] Received data: score: 0, date: Sat Oct 25 2014 16:18:51 GMT-0400 (EDT)
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 16:18 ] Score has been updated via the following query: INSERT INTO Scores (id, scoreDate, score) VALUES (NULL, NOW(), 0)
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 16:18 ] 0 was NOT a high score!
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 16:20 ] Received data: score: 80, date: Sat Oct 25 2014 16:20:41 GMT-0400 (EDT)
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 16:20 ] Word is: wheelbarrow
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 16:20 ] Score has been updated via the following query: INSERT INTO Scores (id, scoreDate, score) VALUES (NULL, NOW(), 80)
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 16:20 ] NEW HIGH SCORE: 80

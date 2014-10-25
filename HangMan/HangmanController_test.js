@@ -1,10 +1,10 @@
 /*
-	Unit test module for HangmanController
+	Unit test module for HangmanController 
 */
 
 describe("Hangman Controller", function() {
 	describe("game start", function() {
-
+		
 		beforeEach(module('JHangman'));
 		
 		/* 
@@ -16,7 +16,7 @@ describe("Hangman Controller", function() {
 		var scope, theController;
 		beforeEach(inject(function($rootScope, $controller, $httpBackend) {
 			scope = $rootScope.$new();
-			theController = $controller("HangmanController", { $scope: scope });
+			theController = $controller("HangmanController", { $scope: scope});
 		}));
 
 		it("should add a welcome message to the notifications array upon startup", function() {

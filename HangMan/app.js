@@ -18,6 +18,9 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
 
     .controller('HighScoreController', ['$scope', function HighScoreController($scope) {
       $scope.pageClass='page-highscore';
+
+      
+      
     }])
 
     .controller('HangmanController', ['$scope', '$http', '$log', '$modal', '$rootScope', function HangmanController($scope, $http, $log, $modal, $rootScope) {
@@ -61,8 +64,10 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
             $scope.reset();
             return;
           }
-          
+
           $scope.theWord = response.data[0][0];
+          $log.info("The word is: " + $scope.theWord);
+
           $scope.divList = new Array($scope.theWord.length);
           for (var i = 0; i < $scope.theWord.length; i++) {
             $scope.divList[i] = false; //initialize div colors...
@@ -142,6 +147,16 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
           var winningPercentage = $scope.roundsWon / $scope.totalRounds;
 
           $scope.notifications.push({msg: 'Congratulations, you guessed the word! Winning Percentage: ' + winningPercentage + '\nTotal Rounds Played: ' + $scope.totalRounds + '\nTotal Rounds Won: ' + $scope.roundsWon, type: 'success'});
+          
+          /* update backend w/ latest high scores */
+          var jsonPayload = {score: $scope.globalScore, date: new Date().toString()};
+          $http.post('HighScore.php', jsonPayload, {action: 'updateScores'}, {'Content-Type': 'application/x-www-form-urlencoded'}).then(function(response) {
+            
+            $log.info("JSON Result from HighScore.php: " + JSON.stringify(response));
+
+            $scope.notifications.push({msg: 'High score has been updated!', type: 'success'});
+          });
+
           $scope.globalScore+=(10*(8-$scope.incorrectGuesses)); //UPDATE SCORE!
           $scope.reset();
         }
