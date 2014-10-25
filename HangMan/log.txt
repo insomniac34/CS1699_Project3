@@ -100,3 +100,27 @@
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:13 ] Added row with score 10 to json array.
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:13 ] Added row with score 0 to json array.
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:13 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:16 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:16 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:16 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:16 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:16 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:16 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:16 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 17:17 ] Word is: mutton
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 17:18 ] Word is: ultimate
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 17:18 ] Word is: highness
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:23 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:23 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:23 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:23 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:23 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:23 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:23 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:32 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:32 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:32 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:32 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:32 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:32 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 17:32 ] Added row with score 0 to json array.
