@@ -194,9 +194,7 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
           /* update backend w/ latest high scores */
           var jsonPayload = {score: $scope.globalScore, date: new Date().toString(), action: 'updateScores'};
           $http.post('HighScore.php', jsonPayload, {'Content-Type': 'application/x-www-form-urlencoded'}).then(function(response) {
-            
             $log.info("JSON Result from HighScore.php: " + JSON.stringify(response));
-
             $scope.notifications.push({msg: 'High score has been updated!', type: 'success'});
           });
 

@@ -19,6 +19,10 @@ describe("Hangman Controller", function() {
 			theController = $controller("HangmanController", { $scope: scope});
 		}));
 
+		it ("should have been assigned the appropriate page class string", function() {
+			expect(scope.pageClass).toBe("page-hangman");
+		});
+
 		it("should add a welcome message to the notifications array upon startup", function() {
 			expect(scope.notifications).toEqual([{msg: 'Welcome!', type: 'success'}]);
 		});
