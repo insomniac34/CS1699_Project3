@@ -22,7 +22,7 @@ describe("High Score Controller Function", function() {
 		});		
 
 		it("should display a 'New High Scores!' message", function() {
-			expect(scope.notifications).not.toEqual();
+			expect(scope.notifications).not.toEqual([]);
 		});
 
 		it("should display up-to-date high score information retrieved from the application backend upon loading the page", function() {

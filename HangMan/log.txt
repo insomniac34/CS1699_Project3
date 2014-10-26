@@ -421,3 +421,11 @@
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:47 ] Added row with score 0 to json array.
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:47 ] Added row with score 0 to json array.
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:47 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-26 11:25 ] Word is: brute
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-26 11:27 ] Word is: rodents
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-26 11:27 ] Word is: gently
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-26 11:27 ] Word is: pirate
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-26 11:27 ] Word is: inconceivable
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-26 11:27 ] Word is: mutton
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-26 11:27 ] Word is: swamp
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-26 11:27 ] Word is: sword
