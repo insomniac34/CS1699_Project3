@@ -21,19 +21,6 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
       $scope.notifications = [];
       $scope.scores = [];   
 
-      /*
-      $scope.getHighScores = function() {
-        var jsonPayload = {action: 'getScores'};
-        $http.post('HighScore.php', jsonPayload, {'Content-Type': 'application/x-www-form-urlencoded'}).then(function(response) {
-          $log.info("JSON Result from HighScore.php: " + JSON.stringify(response));
-          $scope.notifications.push({msg: 'New High Scores!', type: 'success'});
-
-          angular.forEach(response.data, function(dataRow) {
-            $scope.scores.push(dataRow);
-          });
-        });        
-      };
-      */
       $scope.getHighScores = function() {
         var jsonPayload = {action: 'getScores'};
         HighScoreService.getHighScores(jsonPayload).then(function(scores) {
@@ -43,12 +30,8 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
         $scope.notifications.push({msg: 'New High Scores!', type: 'success'});
       };
 
-      $scope.getHighScores();
-
-
-
       /* fetch high score data from backend */
-      //$scope.getHighScores();      
+      $scope.getHighScores();      
 
       $scope.closeNotification = function(index) {
           $scope.notifications.splice(index, 1);
