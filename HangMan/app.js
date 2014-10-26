@@ -94,6 +94,7 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
       $rootScope.$on('modalResult', function(result) {$scope.giveUp(); $scope.startNewRound()});
 
       $scope.startNewRound = function() {
+        $scope.notifications.push({msg: 'New round has begun!', type: 'success'});
         $scope.started = false;
         $http.post('Hangman.php', {action: 'getNewWord'}, {'Content-Type': 'application/x-www-form-urlencoded'}).then(function(response) {
           
