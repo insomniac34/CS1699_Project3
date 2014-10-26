@@ -201,3 +201,31 @@
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:36 ] Added row with score 10 to json array.
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:36 ] Added row with score 0 to json array.
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:36 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:37 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:37 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:37 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:37 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:37 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:37 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:37 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 20:38 ] Word is: dizzying
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:38 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:38 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:38 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:38 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:38 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:38 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:38 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 20:38 ] Word is: despair
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-25 20:39 ] Word is: noble
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:39 ] Received data: score: 0, date: Sat Oct 25 2014 20:39:16 GMT-0400 (EDT)
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:39 ] Score has been updated via the following query: INSERT INTO Scores (id, scoreDate, score) VALUES (NULL, NOW(), 0)
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:39 ] 0 was NOT a high score!
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:48 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:48 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:48 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:48 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:48 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:48 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:48 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:48 ] Added row with score 0 to json array.
