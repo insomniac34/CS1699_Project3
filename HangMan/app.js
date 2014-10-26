@@ -38,6 +38,7 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
         var jsonPayload = {action: 'getScores'};
         HighScoreService.getHighScores(jsonPayload).then(function(scores) {
           $scope.scores = scores;
+          $log.info("scores: " + JSON.stringify(scores));
         });
         $scope.notifications.push({msg: 'New High Scores!', type: 'success'});
       };
