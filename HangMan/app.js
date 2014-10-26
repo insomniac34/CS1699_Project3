@@ -216,7 +216,7 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
     /*
       Controller module for the homepage/main menu. Handles functionality of the menu system. 
     */
-    .controller('HomeController', ['$scope', function HomeController($scope) {
+    .controller('HomeController', ['$scope', '$log', function HomeController($scope, $log) {
       $scope.pageClass='page-home';
       
       $scope.treeCategories = [
@@ -230,6 +230,8 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
       $scope.subCategories = [];
       $scope.curNode = -1;
       $scope.expanded = false;
+
+      $log.info("page name is " + $(document).find("title").text());
 
       $scope.onClick = function(nodeId) {
 
