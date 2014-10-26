@@ -8,6 +8,15 @@ describe("Home Controller", function() {
 			theController = $controller("HomeController", { $scope: scope });
 		}));
 
+		it ("should display all submenus as closed upon the page loading", function() {
+			expect(scope.expanded).toBe(false);
+
+			/* verify emptiness of each menu's "active" container */
+			angular.forEach(scope.treeCategories, function(treeCategory) {
+				expect(treeCategory.activeSubCategories).toEqual([]);
+			});
+		});
+
 		it ("should expand properly if clicked", function() {
 			expect(scope.expanded).toBe(false);
 			scope.onClick(0);
@@ -36,7 +45,6 @@ describe("Home Controller", function() {
 			expect(scope.treeCategories[1].activeSubCategories).toEqual([]);			
 		});
 
-
 		it ("should display a newly clicked-on button's subcategories after it closes an already-opened submenu's subcategories", function() {
 			
 			/* click on "Game" category */
@@ -51,6 +59,20 @@ describe("Home Controller", function() {
 			/* verify "User" submenumenu is displayed */
 			expect(scope.treeCategories[0].activeSubCategories).toContain({name: 'Login', link: '#', dataTarget: "#", toggle: ""}, {name: 'Register', link: '#', dataTarget: '#userRegistrationModal', toggle: "modal"});
 		});
+
+		it ("should close the opened submenu if the open category title is clicked again", function() {
+
+			/* click on "High Score & Achievements Subcategory" */
+			scope.onClick(2);
+			expect(scope.expanded).toBe(true);
+			expect(scope.treeCategories[2].activeSubCategories).toContain({name: 'High Scores', link: '#highscore', dataTarget: "#", toggle: ""}, {name: 'Other Stats', link: '#', dataTarget: "#", toggle: ""});
 			
+			/* click on "High Score & Achievements Subcategory" */
+			scope.onClick(2);
+			expect(scope.expanded).toBe(false);
+			expect(scope.treeCategories[2].activeSubCategories).toEqual([]);
+		});
+
+
 	});
 });
