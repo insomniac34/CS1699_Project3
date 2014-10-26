@@ -43,7 +43,7 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
 
     }])
 
-    .controller('HangmanController', ['$scope', '$http', '$log', '$modal', '$rootScope', function HangmanController($scope, $http, $log, $modal, $rootScope) {
+    .controller('HangmanController', ['$scope', '$http', '$log', '$modal', '$rootScope', '$location', function HangmanController($scope, $http, $log, $modal, $rootScope, $location) {
       
       $scope.pageClass='page-hangman';
       $scope.theWord = " ";

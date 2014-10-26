@@ -8,6 +8,10 @@ describe("Home Controller", function() {
 			theController = $controller("HomeController", { $scope: scope });
 		}));
 
+		it ("should have been assigned the appropriate page class string", function() {
+			expect(scope.pageClass).toBe("page-home");
+		});
+
 		it ("should display all submenus as closed upon the page loading", function() {
 			expect(scope.expanded).toBe(false);
 
@@ -72,7 +76,5 @@ describe("Home Controller", function() {
 			expect(scope.expanded).toBe(false);
 			expect(scope.treeCategories[2].activeSubCategories).toEqual([]);
 		});
-
-
 	});
 });
