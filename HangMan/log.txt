@@ -229,3 +229,195 @@
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:48 ] Added row with score 0 to json array.
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:48 ] Added row with score 0 to json array.
 [ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 20:48 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:35 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:35 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:35 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:35 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:35 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:35 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:35 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:35 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:51 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:51 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:51 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:51 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:51 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:51 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:51 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:51 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:52 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:52 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:52 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:52 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:52 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:52 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:52 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:52 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:53 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:54 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:54 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:54 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:54 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:54 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:54 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:54 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:54 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:55 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:55 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:55 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:55 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:55 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:55 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:55 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:55 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:56 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:56 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:56 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:56 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:56 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:56 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:56 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:56 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:57 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:59 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:59 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:59 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:59 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:59 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:59 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:59 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 22:59 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:00 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:11 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:11 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:11 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:11 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:11 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:11 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:11 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:11 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:12 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:12 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:12 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:12 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:12 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:12 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:12 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:12 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:15 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:15 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:15 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:15 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:15 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:15 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:15 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:15 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:16 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:28 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:28 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:28 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:28 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:28 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:28 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:28 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:28 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:29 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:47 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:47 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:47 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:47 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:47 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:47 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:47 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-25 23:47 ] Added row with score 0 to json array.

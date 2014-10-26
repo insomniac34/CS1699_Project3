@@ -37,11 +37,34 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
           $scope.notifications.splice(index, 1);
       };        
 
-      $scope.sortScores = function() {
+      $scope.sorted = {};
+      $scope.sorted["score"] = false;
+      $scope.sorted["date"] = false;
 
+      $scope.sortByDate = function() {
+        $scope.scores = ($scope.sorted['date']) ? reverseSortByKey($scope.scores, 'scoreDate') : sortByKey($scope.scores, 'scoreDate');
+        $scope.sorted["date"] = ($scope.sorted["date"]) ? false : true;
       };
 
-    }])
+      $scope.sortByScore = function() {
+        $scope.scores = ($scope.sorted['score']) ? reverseSortByKey($scope.scores, 'score') : sortByKey($scope.scores, 'score');
+        $scope.sorted["score"] = ($scope.sorted["score"]) ? false : true;
+      };      
+
+      function sortByKey(array, key) {
+        return array.sort(function(a, b) {
+          var x = a[key]; var y = b[key];
+          return ((x < y) ? -1 : ((x > y) ? 1 : 0));
+        });
+      }
+
+      function reverseSortByKey(array, key) {
+        return array.sort(function(a, b) {
+          var x = a[key]; var y = b[key];
+          return ((x > y) ? -1 : ((x < y) ? 1 : 0));
+        });
+      }
+  }])
 
     .controller('HangmanController', ['$scope', '$http', '$log', '$modal', '$rootScope', '$location', function HangmanController($scope, $http, $log, $modal, $rootScope, $location) {
       
