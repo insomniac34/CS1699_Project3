@@ -1,8 +1,6 @@
-# CS1699 - Software Quality Assurance
-Fall Semester 2014
-
-## Deliverable 3
+# CS1699 Deliverable 3: Behavior-Driven Development
 By Liz Davis & Tyler Raborn
+
 
 For this assignment, your group will write systems tests (aka acceptance or integration tests) using the BDD model discussed in class.  That is, you will write user stories (features) and scenarios in Gherkin (or a similar language, if you prefer), and the step definitions in the language of your project.  You should substantially cover a subset of functionality for the project, and note in the "Testing Concerns" section what other aspects you would additionally add for full testing if this were a professional product.
 
