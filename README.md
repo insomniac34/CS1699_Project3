@@ -1,5 +1,6 @@
 # CS1699 - DELIVERABLE 3: Systems Testing with BDD
 Software Under Test: JHangMan, a version of Hangman written in JavaScript
+
 By Liz Davis & Tyler Raborn
 
 ## Summary
