@@ -154,28 +154,5 @@ describe("Hangman Controller", function() {
 		expect(scope.notifications).toEqual([{msg: 'Welcome!', type: 'success'}]);
 		expect(scope.words).toEqual([]);
 	});
-	*/
-	
-
-		
+	*/		
 });
-
-/*
-describe("assigning stuff to this", function() {
-  Given(function() { this.number = 24; });
-  Given(function() { this.number++; });
-  When(function() { this.number *= 2; });
-  Then(function() { return this.number === 50; });
-  // or
-  Then(function() { expect(this.number).toBe(50) });
-});
-
-describe("assigning stuff to variables", function() {
-  var subject;
-  Given(function() { subject = []; });
-  When(function() { subject.push('foo'); });
-  Then(function() { return subject.length === 1; });
-  // or
-  Then(function() { expect(subject.length).toBe(1); });
-});
-*/
