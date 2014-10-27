@@ -154,6 +154,7 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
             //$scope.letters[obj.id].guesses+=1;
             if (obj.id !== id) $scope.succesfulGuesses+=1;
           }
+          
           if (obj.id === id) {
             obj.guesses+=1;
             $log.info("comparing " + $scope.guessed.letters[id] + " to " + obj.name);

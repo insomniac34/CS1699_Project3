@@ -1,91 +1,95 @@
 describe("Home Controller", function() {
-	describe("Main menu functionality", function() {
-		var scope, theController;
-		beforeEach(module('JHangman'));
+	
+	var scope, theController;
+	beforeEach(module('JHangman'));
 
-		beforeEach(inject(function($rootScope, $controller) {
-			scope = $rootScope.$new();
-			theController = $controller("HomeController", { $scope: scope });
-		}));
+	beforeEach(inject(function($rootScope, $controller) {
+		scope = $rootScope.$new();
+		theController = $controller("HomeController", { $scope: scope });
+	}));
 
-		/*
-		it ("should have been assigned the appropriate page class string", function() {
-			expect(scope.pageClass).toBe("page-home");
-		});
-		
+	describe("A user clicking on the tree categories when they are closed", function() {
 
-		it ("should display all submenus as closed upon the page loading", function() {
-			expect(scope.expanded).toBe(false);
 
-			angular.forEach(scope.treeCategories, function(treeCategory) {
-				expect(treeCategory.activeSubCategories).toEqual([]);
-			});
-		});
-		*/
-
-		Given("no subcategories are currently open", function() {
+		/* #1 */
+		Given("no categories are currently expanded", function() {
 			angular.forEach(scope.treeCategories, function(treeCategory) {
 				treeCategory.activeSubCategories = [];
 			});			
 		});
 
-		When("a user clicks on a subcategory", function() {
-			
-		});
-
-		it ("should expand properly if clicked", function() {
-			expect(scope.expanded).toBe(false);
+		When("a user clicks on a category", function() {
 			scope.onClick(0);
+		});
+
+		Then("it should expand to reveal its subcategories", function() {
 			expect(scope.expanded).toBe(true);
 		});
 
-		it ("should display the appropriate subcategories when a category is clicked", function() {
-			
-			/* display submenus */
-			scope.onClick(1);
-			expect(scope.expanded).toBe(true);
-			expect(scope.treeCategories[1].subCategories).toContain({name: 'Start New Game', link: '#hangman', dataTarget: "", toggle: ""}, {name: 'Resume Previous Game', link: '#', dataTarget: "#gameModal", toggle: "modal"});
+
+		/* #2 */
+		Given("no categories are currently expanded", function() {
+			angular.forEach(scope.treeCategories, function(treeCategory) {
+				treeCategory.activeSubCategories = [];
+			});			
 		});
 
-		it ("should close an already-opened set of subcategories when another category is clicked", function() {
-
-			/* click on "Game" category */
+		When("a user clicks on a category", function() {
 			scope.onClick(1);
-			expect(scope.expanded).toBe(true);
+		});
+
+		Then("it shall reveal the appropriate subcategories for that category", function() {
 			expect(scope.treeCategories[1].activeSubCategories).toContain({name: 'Start New Game', link: '#hangman', dataTarget: "", toggle: ""}, {name: 'Resume Previous Game', link: '#', dataTarget: "#gameModal", toggle: "modal"});
-
-			/* click on "User" category */
-			scope.onClick(0);
-
-			/* verify "Game" submenumenu is closed */
-			expect(scope.treeCategories[1].activeSubCategories).toEqual([]);			
 		});
+	});
+	
+	describe("Tree menu functionality when menus are in an already-opened state", function() {
 
-		it ("should display a newly clicked-on button's subcategories after it closes an already-opened submenu's subcategories", function() {
-			
-			/* click on "Game" category */
+
+		/* #1 */
+		Given("A menu is in an open state", function() {
 			scope.onClick(1);
-			expect(scope.expanded).toBe(true);
-			expect(scope.treeCategories[1].activeSubCategories).toContain({name: 'Start New Game', link: '#hangman', dataTarget: "", toggle: ""}, {name: 'Resume Previous Game', link: '#', dataTarget: "#gameModal", toggle: "modal"});
-
-			/* click on "User" category */
-			scope.onClick(0);
-			expect(scope.treeCategories[1].activeSubCategories).toEqual([]);			
-			
-			/* verify "User" submenumenu is displayed */
-			expect(scope.treeCategories[0].activeSubCategories).toContain({name: 'Login', link: '#', dataTarget: "#", toggle: ""}, {name: 'Register', link: '#', dataTarget: '#userRegistrationModal', toggle: "modal"});
 		});
 
-		it ("should close the opened submenu if the open category title is clicked again", function() {
+		When("A user clicks on a DIFFERENT category in the tree", function() {
+			scope.onClick(0);
+		});
 
-			/* click on "High Score & Achievements Subcategory" */
+		Then("The initial tree submenu should be closed", function() {
+			expect(scope.treeCategories[1].activeSubCategories).toEqual([]);
+		});
+
+
+		/* #2 */
+		Given("A menu is in an open state", function() {
+			angular.forEach(scope.treeCategories, function(treeCategory) {
+				treeCategory.activeSubCategories = [];
+			});								
+			scope.onClick(1);
+		});
+
+		When("A user clicks on a DIFFERENT category in the tree then is already open", function() {
 			scope.onClick(2);
-			expect(scope.expanded).toBe(true);
-			expect(scope.treeCategories[2].activeSubCategories).toContain({name: 'High Scores', link: '#highscore', dataTarget: "#", toggle: ""}, {name: 'Other Stats', link: '#', dataTarget: "#", toggle: ""});
-			
-			/* click on "High Score & Achievements Subcategory" */
+		});
+
+		Then("it should display the newly clicked-on category's subcategories", function() {
+			expect(scope.treeCategories[2].activeSubCategories).toEqual([{name: 'High Scores', link: '#highscore', dataTarget: "#", toggle: ""}, {name: 'Other Stats', link: '#', dataTarget: "#", toggle: ""}]);
+		});
+
+
+		/* #3 */
+		Given("a submenu is already opened", function() {
+			angular.forEach(scope.treeCategories, function(treeCategory) {
+				treeCategory.activeSubCategories = [];
+			});					
 			scope.onClick(2);
-			expect(scope.expanded).toBe(false);
+		});
+
+		When("the user clicks on the opened submenu submenu", function() {
+			scope.onClick(2);
+		});
+
+		Then("the submenu should close", function() {
 			expect(scope.treeCategories[2].activeSubCategories).toEqual([]);
 		});
 	});
