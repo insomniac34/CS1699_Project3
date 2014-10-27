@@ -62,14 +62,9 @@ describe("Hangman Controller", function() {
     	});			
     });
 
-    describe("When the user starts a new round", function () {
-
-    	//Given(function() {}); /* the user is on the Hangman game page*/
-    	//When(function() {});	
-    });		
-
     describe("The user succesfully guesses a letter", function() {
-    	Given(function() {
+
+    	Given("The game has started", function() {
     		scope.theWord = "blah";
               scope.divList = new Array(scope.theWord.length);
               for (var i = 0; i < scope.theWord.length; i++) {
@@ -91,13 +86,37 @@ describe("Hangman Controller", function() {
     	});
 
     	Then("The system should display the letter as guessed", function() {
-    		expect(scope.succesfulGuesses).toBe(1);
     		expect(scope.letters[0].display).not.toBe('?');
-    		expect(scope.letters[0].guessed).toBe(true)
         });
+
+        Given("The game has started", function() {
+            scope.theWord = "blah";
+              scope.divList = new Array(scope.theWord.length);
+              for (var i = 0; i < scope.theWord.length; i++) {
+                scope.divList[i] = false; //initialize div colors...
+                scope.letters.push({
+                    name: scope.theWord.charAt(i), 
+                    display: '?',
+                    guessed: false,
+                    guesses: 0,
+                    id: i
+                });
+              }
+              scope.guessed.letters = new Array(scope.theWord.length);
+        });
+
+        When("The user guesses the correct letter", function() {
+            scope.guessed.letters[0] = 'b';
+            scope.guess(0);
+        });
+
+        Then("The background of the letter should change to green", function() {
+            expect(scope.divList[0]).toBe(true);
+        });        
     });
 
     describe("The user incorrectly guesses a letter", function() {
+
         Given("The game has started", function() {
             scope.theWord = "blah";
               scope.divList = new Array(scope.theWord.length);
@@ -150,29 +169,4 @@ describe("Hangman Controller", function() {
             expect(scope.divList[0]).toBe(false);
         });
     });
-
-	/*
-	it ("should have been assigned the appropriate page class string", function() {
-		expect(scope.pageClass).toBe("page-hangman");
-	});
-
-
-	it("should add a welcome message to the notifications array upon startup", function() {
-		expect(scope.notifications).toEqual([{msg: 'Welcome!', type: 'success'}]);
-	});
-
-	it("should reset all controller variables and restart the game when the reset button is pushed", function() {
-		
-		scope.theWord = "blah";
-		scope.guessed.letters = ['b', 'l', 'a', 'h'];
-		scope.notifications.push([{msg: 'Congrats you won!', type: 'success'}]);
-
-		scope.reset();
-s
-		expect(scope.theWord).toEqual('');
-		expect(scope.guessed.letters).toBeUndefined();
-		expect(scope.notifications).toEqual([{msg: 'Welcome!', type: 'success'}]);
-		expect(scope.words).toEqual([]);
-	});
-	*/		
 });
