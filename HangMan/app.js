@@ -22,12 +22,13 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
       $scope.scores = [];   
 
       $scope.getHighScores = function() {
+        $scope.notifications.push({msg: 'New High Scores!', type: 'success'});
         var jsonPayload = {action: 'getScores'};
         HighScoreService.getHighScores(jsonPayload).then(function(scores) {
           $scope.scores = scores;
           $log.info("scores: " + JSON.stringify(scores));
         });
-        $scope.notifications.push({msg: 'New High Scores!', type: 'success'});
+
       };
 
       /* fetch high score data from backend */
@@ -154,7 +155,7 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
             //$scope.letters[obj.id].guesses+=1;
             if (obj.id !== id) $scope.succesfulGuesses+=1;
           }
-          
+
           if (obj.id === id) {
             obj.guesses+=1;
             $log.info("comparing " + $scope.guessed.letters[id] + " to " + obj.name);
