@@ -231,7 +231,7 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
         $scope.incorrectGuesses = 0;
         $scope.totalGuesses = 0;
         $scope.startNewRound();
-        $scope.notifications = [{msg: 'Welcome!', type: 'success'}];
+        $scope.notifications = [];
         };        
     }])
 
