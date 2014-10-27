@@ -8,17 +8,29 @@ describe("Home Controller", function() {
 			theController = $controller("HomeController", { $scope: scope });
 		}));
 
+		/*
 		it ("should have been assigned the appropriate page class string", function() {
 			expect(scope.pageClass).toBe("page-home");
 		});
+		
 
 		it ("should display all submenus as closed upon the page loading", function() {
 			expect(scope.expanded).toBe(false);
 
-			/* verify emptiness of each menu's "active" container */
 			angular.forEach(scope.treeCategories, function(treeCategory) {
 				expect(treeCategory.activeSubCategories).toEqual([]);
 			});
+		});
+		*/
+
+		Given("no subcategories are currently open", function() {
+			angular.forEach(scope.treeCategories, function(treeCategory) {
+				treeCategory.activeSubCategories = [];
+			});			
+		});
+
+		When("a user clicks on a subcategory", function() {
+			
 		});
 
 		it ("should expand properly if clicked", function() {

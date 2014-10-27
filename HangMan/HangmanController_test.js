@@ -31,7 +31,7 @@ describe("Hangman Controller", function() {
     		scope.reset(); /* reset button is pressed */
     	}); 
 
-    	Then("the word should no longer be equal", function() { 
+    	Then("the word should no longer be 'blah'", function() { 
     		expect(scope.theWord).not.toBe("blah"); 
     	});	
 
