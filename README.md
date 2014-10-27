@@ -14,10 +14,11 @@ With JHangman, the application logic revolves entirely aroud monitoring the user
 For this assignment, your group will write systems tests (aka acceptance or integration tests) using the BDD model discussed in class.  That is, you will write user stories (features) and scenarios in Gherkin (or a similar language, if you prefer), and the step definitions in the language of your project.  You should substantially cover a subset of functionality for the project, and note in the "Testing Concerns" section what other aspects you would additionally add for full testing if this were a professional product.
 
 ## Testing Concerns & Notes
-Issues encountered while testing the application were relatively few and far between. The JavaScript source code for the webapp is written using Google's AngularJS library. This is located primarily in HangMan/app.js. HangMan/HighScoreService.js also contains a bit of source code. The tests are spread among 3 files to match the 3 modules that they test. HangmanController\_test.js tests the functionality of the main game. HomeController\_test.js tests the functionality of the main menu. HighScoreController\_test.js tests the functionality of the High Score page of the app.
+Issues encountered while testing the application were relatively few and far between. 
 
+The JavaScript source code for the webapp is written using Google's AngularJS library. This is located primarily in HangMan/app.js. HangMan/HighScoreService.js also contains a bit of source code. The tests are spread among 3 files to match the 3 modules that they test. HangmanController\_test.js tests the functionality of the main game. HomeController\_test.js tests the functionality of the main menu. HighScoreController\_test.js tests the functionality of the High Score page of the app. The application backend is written entirely in PHP, and is spread across a handful of files, including HangMan.php, Logger.php and Highscore.php.
 
-Tests and code should be on Github or another publicly accessible repository.
+If this were a professional project, singificantly more tests would need to be performed in able to varify the usability and stability of the application. These would include, but not be limited to, an increased coverage level in the main game logic for such scenarios as SQL injection attacks, the entering of unexpected or unsupported character sets, and the logic utilized by the PHP scripts on the back end. 
 
 ## Format
 Every group should have a title page with:
