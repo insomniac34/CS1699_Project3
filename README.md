@@ -1,8 +1,20 @@
-# CS1699 Deliverable 3: Behavior-Driven Development
+# CS1699 - DELIVERABLE 3: Systems Testing with BDD
+Software Under Test: JHangMan, a version of Hangman written in JavaScript
 By Liz Davis & Tyler Raborn
+
+## Summary
+We decided to test JHangman because, as a webapp, it's functionality is entirely user experience driven. Initially, we were going to test a network simulation written in Java, but it's interface was clunky and the application served only to demonstrate various algorithms in graph theory, and as such the user experience was limited.
+With JHangman, the application logic revolves entirely aroud monitoring the user's actions and reacting to their decisions made in a game setting. As such the number of user scenarios is extremely high, even for the limited functionality provided by the webpage. 
+
+
+
 
 
 For this assignment, your group will write systems tests (aka acceptance or integration tests) using the BDD model discussed in class.  That is, you will write user stories (features) and scenarios in Gherkin (or a similar language, if you prefer), and the step definitions in the language of your project.  You should substantially cover a subset of functionality for the project, and note in the "Testing Concerns" section what other aspects you would additionally add for full testing if this were a professional product.
+
+## Testing Concerns & Notes
+Issues encountered while testing the application were relatively few and far between. The JavaScript source code for the webapp is written using Google's AngularJS library. This is located primarily in HangMan/app.js. HangMan/HighScoreService.js also contains a bit of source code. The tests are spread among 3 files to match the 3 modules that they test. HangmanController\_test.js tests the functionality of the main game. HomeController\_test.js tests the functionality of the main menu. HighScoreController\_test.js tests the functionality of the High Score page of the app.
+
 
 Tests and code should be on Github or another publicly accessible repository.
 
