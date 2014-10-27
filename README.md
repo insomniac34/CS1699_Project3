@@ -6,6 +6,7 @@ By Liz Davis & Tyler Raborn
 ## Summary
 We decided to test JHangman because, as a webapp, it's functionality is entirely user experience driven. Initially, we were going to test a network simulation written in Java, but it's interface was clunky and the application served only to demonstrate various algorithms in graph theory, and as such the user experience was limited.
 With JHangman, the application logic revolves entirely aroud monitoring the user's actions and reacting to their decisions made in a game setting. As such the number of user scenarios is extremely high, even for the limited functionality provided by the webpage. 
+The tests themselves can be grouped into three functional groups, matching the three main functional modules of the webapp. This includes the high score page, where the application requests high score data from the serverside database, the main game page which fetches a randomly chosen word from the server, and the home page which features a tree-structured menu system for navigation between features of the webapp.
 
 
 
