@@ -1,6 +1,3 @@
-[ INFO /var/www/php/v3/Hangman] [ 2014-10-23 17:06 ] Word is: sword
-[ INFO /var/www/php/v3/Hangman] [ 2014-10-23 17:22 ] Word is: despair
-[ INFO /var/www/php/v3/Hangman] [ 2014-10-23 19:27 ] Word is: sword
 [ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-23 22:29 ] Word is: gently
 [ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-23 22:30 ] Word is: skill
 [ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-23 22:33 ] Word is: boo
