@@ -112,7 +112,7 @@ describe("High score table functionality", function() {
         });
     });
 
-    describe("the user sorts the high score table by score", function() {
+    describe("the user sorts the high score table by date", function() {
 
         /* #1 */
         Given("the data in the table is not sorted by date", function()  {
