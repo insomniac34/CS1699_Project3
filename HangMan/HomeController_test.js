@@ -46,7 +46,7 @@ describe("Tree menu functionality", function() {
             scope.onClick(2);
         });
 
-        Then("The initial tree submenu should be closed", function() {
+        Then("The initial tree submenu should be closed and it should display the newly clicked-on category's subcategories", function() {
             expect(scope.treeCategories[1].activeSubCategories).toEqual([]);
             expect(scope.treeCategories[2].activeSubCategories).toEqual([
                 {name: 'High Scores', link: '#highscore', dataTarget: "#", toggle: ""}, 

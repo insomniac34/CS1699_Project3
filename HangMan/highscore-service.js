@@ -1,3 +1,9 @@
+/*
+ *  CS-1699 Project 3
+ *  Written by Tyler Raborn
+ *  Tested by Liz Davis and Tyler Raborn
+ */
+
 angular.module('JHangman')
 
 .service("HighScoreService", ['$http', '$log', function HighScoreService($http, $log) {

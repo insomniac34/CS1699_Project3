@@ -5,6 +5,10 @@
 
 #Tests located in HomeController_test.js
 Feature: Tree menu functionality
+    As a user
+    I want to be able to easily and intuitively operate the application's main menu
+    In order to easily navigate between the webapp's features
+
     Scenario: User clicks on a category in an unexpanded menu
         Given no menu categories are currently expanded
         When a user clicks on some category in the menu
@@ -25,6 +29,10 @@ Feature: Tree menu functionality
 
 #Tests located in HangmanController_test.js
 Feature: game restart button
+    As a user
+    I want to be able to restart at any point in the game
+    In order to switch words when I am no longer enjoying myself
+
     Scenario: The user presses the restart button once the word has been set
         Given the word is set to "blah"
         When the reset button is pressed
@@ -41,6 +49,10 @@ Feature: game restart button
         Then the system should clear all notifications
 
 Feature: HangMan individual letter guessing functionality
+    As a user
+    I want to be able to guess individual letters of the word
+    In order to attempt to win the game
+
     Scenario: The user succesfully guesses a letter 
         Given the game has begun
         When the user guesses the correct letter "b"
@@ -60,6 +72,10 @@ Feature: HangMan individual letter guessing functionality
         And the global score shall not be modified
 
 Feature: HangMan word guessing functionality
+    As a user
+    I want to be able to guess the entire word 
+    In order to attempt to win the game immediately
+
     Scenario: The user correctly guesses the word
         Given the word is set to "blah"
         When the user guesses "blah"
@@ -75,6 +91,10 @@ Feature: HangMan word guessing functionality
 
 #Tests located in HighScoreController_test.js
 Feature: High score table functionality
+    As a user 
+    I want to be able to view the latest high scores
+    In order to compete with others to maximize enjoyment of the game
+
     Scenario: The user visits the high scores page for the first time
         Given the user has not yet visited the high scores page
         When the user visits the high scores page
