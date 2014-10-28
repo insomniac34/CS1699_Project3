@@ -429,3 +429,30 @@
 [ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-26 11:27 ] Word is: mutton
 [ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-26 11:27 ] Word is: swamp
 [ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-26 11:27 ] Word is: sword
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 14:44 ] Word is: mutton
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 14:44 ] Word is: inconceivable
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 14:45 ] Word is: noble
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 14:45 ] Word is: ultimate
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 14:45 ] Word is: bluffing
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 14:45 ] Word is: blunder
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 14:45 ] Word is: pirate
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 14:45 ] Word is: pirate
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 14:45 ] Word is: intellect
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 14:45 ] Word is: inconceivable
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 14:45 ] Retrieving high scores...
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 14:45 ] Added row with score 80 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 14:45 ] Added row with score 15 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 14:45 ] Added row with score 11 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 14:45 ] Added row with score 10 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 14:45 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 14:45 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 14:45 ] Added row with score 0 to json array.
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 18:03 ] Word is: shrieking
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 18:04 ] Received data: score: 0, date: Mon Oct 27 2014 18:04:31 GMT-0400 (EDT)
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 18:04 ] Word is: stinking
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 18:04 ] Score has been updated via the following query: INSERT INTO Scores (id, scoreDate, score) VALUES (NULL, NOW(), 0)
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 18:04 ] 0 was NOT a high score!
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 18:04 ] Received data: score: 80, date: Mon Oct 27 2014 18:04:42 GMT-0400 (EDT)
+[ INFO /var/www/php/project3/HangMan/Hangman] [ 2014-10-27 18:04 ] Word is: skill
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 18:04 ] Score has been updated via the following query: INSERT INTO Scores (id, scoreDate, score) VALUES (NULL, NOW(), 80)
+[ INFO /var/www/php/project3/HangMan/HighScore] [ 2014-10-27 18:04 ] NEW HIGH SCORE: 80

@@ -3,7 +3,7 @@
     Unit test module for HighScoreController
 */
 
-describe("High Score Controller Function", function() {
+describe("High score table functionality", function() {
     var scope, theController, $httpBackend, $http, HighScoreService;
     beforeEach(module('JHangman'));
 
@@ -22,7 +22,21 @@ describe("High Score Controller Function", function() {
             {"id":"1","scoreDate":"2014-10-23 22:20:41","score":"10"},
             {"id":"4","scoreDate":"2014-10-25 16:17:34","score":"0"},
             {"id":"5","scoreDate":"2014-10-25 16:18:51","score":"0"}],
-            "status":200,"config":{"method":"POST","transformRequest":[null],"transformResponse":[null],"Content-Type":"application/x-www-form-urlencoded","url":"HighScore.php","data":{"action":"getScores"},"headers":{"Accept":"application/json, text/plain, */*","Content-Type":"application/json;charset=utf-8"}},"statusText":"OK"});
+            "status":200,
+            "config": {
+                "method":"POST",
+                "transformRequest":[null],
+                "transformResponse":[null],
+                "Content-Type":"application/x-www-form-urlencoded",
+                "url":"HighScore.php",
+                "data":{"action":"getScores"},
+                "headers":{
+                    "Accept":"application/json, text/plain, */*",
+                    "Content-Type":"application/json;charset=utf-8"
+                }
+            },
+            "statusText":"OK"
+        });
     }));
 
     it ("should have been assigned the appropriate page class string", function() {
@@ -33,20 +47,10 @@ describe("High Score Controller Function", function() {
         expect(scope.notifications).not.toEqual([]);
     });
 
-    /*
-    it("should display up-to-date high score information retrieved from the application backend upon loading the page", function() {
-        var jsonPayload = {action: 'getScores'};
-        HighScoreService.getHighScores(jsonPayload).then(function(result) {
-          scope.scores = result;
-          expect(scope.scores).toEqual([{"id":"6","scoreDate":"2014-10-25 16:20:41","score":"80"},{"id":"3","scoreDate":"2014-10-23 23:00:40","score":"15"},{"id":"2","scoreDate":"2014-10-23 22:20:53","score":"11"},{"id":"1","scoreDate":"2014-10-23 22:20:41","score":"10"},{"id":"4","scoreDate":"2014-10-25 16:17:34","score":"0"},{"id":"5","scoreDate":"2014-10-25 16:18:51","score":"0"}] );
-        });     
-    });
-    */
-
-    describe("high score viewing functionality", function() {
+    describe("the user visits the high score page for the first time", function() {
         
         /* #1 */
-        Given("the user has not yet visited the High Scores page", function() {
+        Given("the user has not yet visited the high scores page", function() {
             scope.scores = [];
         });
 
@@ -65,7 +69,7 @@ describe("High Score Controller Function", function() {
             ];
         });
 
-        Then("the High Scores table should be populated with data retrieved from the application backend", function() {
+        Then("the high scores table should be populated with data retrieved from the application backend", function() {
             expect(scope.scores).toEqual([
                 {"id":"6","scoreDate":"2014-10-25 16:20:41","score":"80"},
                 {"id":"3","scoreDate":"2014-10-23 23:00:40","score":"15"},
@@ -78,7 +82,11 @@ describe("High Score Controller Function", function() {
 
 
         /* #2 */
-        Given("the user has not yet visited the high scores page", function() {
+
+    });
+
+    describe("the high scores are updated after the user returns to the high scores page", function() {
+        Given("the high scores page has not been updated yet", function() {
             scope.notifications = [];
             scope.scores = [];
         });
@@ -89,10 +97,10 @@ describe("High Score Controller Function", function() {
 
         Then("the appropriate message should be displayed to the user", function() {
             expect(scope.notifications).toContain({msg: 'New High Scores!', type: 'success'});
-        });
+        });        
     });
 
-    describe("sort by score functionality", function() {
+    describe("the user sorts the high score table by score", function() {
 
         /* #1 */
         Given("The data in the table is not sorted by score", function() {
@@ -116,7 +124,7 @@ describe("High Score Controller Function", function() {
         });
     });
 
-    describe("sort by date functionality", function() {
+    describe("the user sorts the high score table by score", function() {
 
         /* #1 */
         Given("the data in the table is not sorted by date", function()  {

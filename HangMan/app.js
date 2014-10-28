@@ -88,6 +88,7 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
       $scope.divList = [];
       $scope.master = {};
       $scope.guessedList = [];
+      $scope.guessedWord = "";
 
       $scope.notifications.push({msg: 'Welcome!', type: 'success'});
 
@@ -234,7 +235,43 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
         $scope.totalGuesses = 0;
         $scope.startNewRound();
         $scope.notifications = [];
-        };        
+        };    
+
+        $scope.guessWord = function() {
+
+          if (angular.equals($scope.guessedWord, "") || $scope.guessedWord.length > 31) {
+            return;
+          }
+
+          $scope.totalGuesses+=1;
+          if (angular.equals($scope.guessedWord, $scope.theWord)) {
+            $scope.roundsWon+=1;
+            $scope.totalRounds+=1;
+            $scope.notifications = [];
+            var winningPercentage = $scope.roundsWon / $scope.totalRounds;
+            $scope.notifications.push({msg: 'Congratulations, you guessed the word! Winning Percentage: ' + winningPercentage + '\nTotal Rounds Played: ' + $scope.totalRounds + '\nTotal Rounds Won: ' + $scope.roundsWon, type: 'success'});
+            
+            /* update backend w/ latest high scores */
+            var jsonPayload = {score: $scope.globalScore, date: new Date().toString(), action: 'updateScores'};
+            $http.post('HighScore.php', jsonPayload, {'Content-Type': 'application/x-www-form-urlencoded'}).then(function(response) {
+              $log.info("JSON Result from HighScore.php: " + JSON.stringify(response));
+              $scope.notifications.push({msg: 'High score has been updated!', type: 'success'});
+            });
+
+            $scope.globalScore+=(10*(8-$scope.incorrectGuesses)); //UPDATE SCORE!
+            $scope.reset();          
+
+          }
+          else {
+            $scope.totalRounds+=1;
+            $scope.notifications = [];
+            $scope.notifications.push({msg: 'You lose! The word was ' + $scope.theWord, type: 'danger'});
+            $scope.reset();
+            $scope.globalScore = 0;
+          }
+
+          $scope.guessedWord = "";
+        };   
     }])
 
     /*

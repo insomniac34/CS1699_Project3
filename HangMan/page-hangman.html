@@ -31,6 +31,10 @@
 		<br>
 		<div alert ng-repeat="notification in notifications" type="{{notification.type}}" close="closeNotification($index)">{{notification.msg}}</div>
 		<br>
+		<div>
+			<input type="text" data-ng-model="guessedWord">
+			<button data-ng-click="guessWord()"> Guess the word! </button>
+		</div>
 		<div ng-repeat="letter in letters" >
 			<div ng-attr-class="{{divList[letter.id] && 'succesful' || 'unsuccesful' }}">
 				<b>{{letter.display}}</b> (Attempts: {{letter.guesses}})
