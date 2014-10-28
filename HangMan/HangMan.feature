@@ -3,7 +3,7 @@
 #Feature Template for JHangman
 
 
-#Home Controller Tests
+#Tests located in HomeController_test.js
 Feature: Tree menu functionality
     Scenario: User clicks on a category in an unexpanded menu
         Given no menu categories are currently expanded
@@ -23,7 +23,7 @@ Feature: Tree menu functionality
         Then the expanded subcategory should revert to a closed state
 
 
-#Hangman Controller Tests
+#Tests located in HangmanController_test.js
 Feature: game restart button
     Scenario: The user presses the restart button once the word has been set
         Given the word is set to "blah"
@@ -73,7 +73,7 @@ Feature: HangMan word guessing functionality
         And a new round should begin
 
 
-#High Score Controller Tests
+#Tests located in HighScoreController_test.js
 Feature: High score table functionality
     Scenario: The user visits the high scores page for the first time
         Given the user has not yet visited the high scores page
