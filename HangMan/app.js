@@ -136,6 +136,7 @@ angular.module( 'JHangman', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
         //ensure letter has not already been guessed:
         if ($scope.guessedList.indexOf($scope.guessed.letters[id]) != -1) {
           $scope.guessed.letters[id] = ''; //clear if already guessed
+          $scope.notifications.push({msg: 'You already guessed that letter!', type: 'failure'});
           return;
         }
         if ($scope.guessed.letters[id].length > 1) {

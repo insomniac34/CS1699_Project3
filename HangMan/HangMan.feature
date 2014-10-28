@@ -60,6 +60,12 @@ Feature: HangMan individual letter guessing functionality
         Then the system shall display "?"
         And the background of the letter shall be red
 
+    Scenario: The user guesses a letter which has already been correctly guessed
+        Given a letter has already been correctly guessed
+        When the user attempts to guess the same letter
+        Then the system should notify the user that the letter has already been guessed
+        And the global score shall not be modified
+
 Feature: HangMan word guessing functionality
     Scenario: The user correctly guesses the word
         Given the word is set to "blah"

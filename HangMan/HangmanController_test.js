@@ -232,4 +232,36 @@ describe("Hangman word-guessing functionality", function() {
             expect(scope.globalScore).toBe(0);
         });
     });
+
+    describe("the user guesses a letter which has already been correctly guessed", function() {
+        Given("a letter has already been correctly guessed", function() {
+            scope.theWord = "blah";
+            scope.notifications = [];
+            scope.globalScore = 20;
+              scope.divList = new Array(scope.theWord.length);
+              for (var i = 0; i < scope.theWord.length; i++) {
+                scope.divList[i] = false; //initialize div colors...
+                scope.letters.push({
+                    name: scope.theWord.charAt(i), 
+                    display: '?',
+                    guessed: false,
+                    guesses: 0,
+                    id: i
+                });
+              }
+              scope.guessed.letters = new Array(scope.theWord.length);
+              scope.guessed.letters = 'b';
+              scope.guess(0);
+        });
+
+        When("the user attempts to guess the same letter", function() {
+            scope.guessed.letters='b';
+            scope.guess(0);
+        });
+
+        Then("the system shall notify the user that the letter has already been guessed and the global score shall be unmodified", function() {
+            expect(scope.notifications).toContain({msg: 'You already guessed that letter!', type: 'failure'});
+            expect(scope.globalScore).toBe(20);
+        });
+    });
 });
