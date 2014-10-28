@@ -16,6 +16,9 @@ The tests themselves can be grouped into three functional groups, matching the t
 
 For this assignment, your group will write systems tests (aka acceptance or integration tests) using the BDD model discussed in class.  That is, you will write user stories (features) and scenarios in Gherkin (or a similar language, if you prefer), and the step definitions in the language of your project.  You should substantially cover a subset of functionality for the project, and note in the "Testing Concerns" section what other aspects you would additionally add for full testing if this were a professional product.
 
+## Screenshot of Unit Tests
+![alt tag](http://i.imgur.com/fGBKY2e.png)
+
 ## Testing Concerns & Notes
 Issues encountered while testing the application primarily revolved around attempting to get Cucumber to work with the application. Cucumber integration with Jasmine proved extremely troublesome, as it required the webapp backend to be written in Ruby utilizing the Sinatra framework. Neither of us had any experience using Ruby or Sinatra, and so programatical integration of the .feature file with our Jasmine unit tests was forgone in the interest of other components of the project. 
 
