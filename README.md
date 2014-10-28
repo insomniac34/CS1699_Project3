@@ -18,7 +18,7 @@ If this were a professional project, significantly more tests would need to be p
 
 By far the biggest mistake/regret was not using a true BDD framework. It was discovered shortly before the due date that Behat(http://docs.behat.org/en/v2.5/), a BDD framework for PHP that mocks the usage style of Gherkin, could have been used to test the application backend via true BDD. 
 
-![Screenshot of Unit Tests in Jasmine](http://i.imgur.com/fGBKY2e.png)
+![Screenshot of Unit Tests in Jasmine](http://i.imgur.com/TWG04BZ.png)
 
 ## Installation of the Project
 In order to set the project up locally, the following software is required:
