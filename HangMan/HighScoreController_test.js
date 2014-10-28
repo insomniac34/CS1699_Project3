@@ -1,6 +1,9 @@
 
 /* 
     Unit test module for HighScoreController
+
+    CS-1699 project 3
+    Tyler Raborn & Liz Davis
 */
 
 describe("High score table functionality", function() {
@@ -39,17 +42,7 @@ describe("High score table functionality", function() {
         });
     }));
 
-    it ("should have been assigned the appropriate page class string", function() {
-        expect(scope.pageClass).toBe("page-highscore");
-    });     
-
-    it("should display a 'New High Scores!' message", function() {
-        expect(scope.notifications).not.toEqual([]);
-    });
-
     describe("the user visits the high score page for the first time", function() {
-        
-        /* #1 */
         Given("the user has not yet visited the high scores page", function() {
             scope.scores = [];
         });
@@ -79,10 +72,6 @@ describe("High score table functionality", function() {
                 {"id":"5","scoreDate":"2014-10-25 16:18:51","score":"0"}
             ]);
         });         
-
-
-        /* #2 */
-
     });
 
     describe("the high scores are updated after the user returns to the high scores page", function() {
@@ -102,7 +91,6 @@ describe("High score table functionality", function() {
 
     describe("the user sorts the high score table by score", function() {
 
-        /* #1 */
         Given("The data in the table is not sorted by score", function() {
             scope.scores = [{"id":"6","scoreDate":"2014-10-25 16:20:41","score":"80"},
                             {"id":"3","scoreDate":"2014-10-23 23:00:40","score":"90"},

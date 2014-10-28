@@ -1,5 +1,8 @@
 /* 
     Unit test module for HomeController 
+
+    CS-1699 project 3
+    Tyler Raborn & Liz Davis  
 */
 
 describe("Tree menu functionality", function() {

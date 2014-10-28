@@ -1,7 +1,8 @@
 
 /*
- *  CS-1520 Project 4
+ *  CS-1699 Project 3
  *  Written by Tyler Raborn
+ *  Tested by Liz Davis and Tyler Raborn
  */
 
 //angular.module('ModalControl', ['ngRoute', 'ngAnimate', 'ui.bootstrap'])
